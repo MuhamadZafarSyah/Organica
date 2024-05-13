@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organica - Non-starchy vegetables.</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/product-details.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="top-bar">
+        <div class="container">
+          <p>Free shipping for all order of $105</p>
+        </div>
+      </div>
+
+      <div class="nav-wrapper">
+        <div class="container">
+          <h1 class="h1">
+            <a href="./index.html" class="logo"
+              >Organ<span class="span">ica</span></a
+            >
+          </h1>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <nav class="navbar" data-navbar>
+            <button
+              class="nav-close-btn"
+              aria-label="Close Menu"
+              data-nav-close-btn
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="./index.html" class="navbar-link">Home</a>
+              </li>
+
+              <li>
+                <a href="./about.html" class="navbar-link">About</a>
+              </li>
+
+              <li>
+                <a href="./shop.html" class="navbar-link">Shop</a>
+              </li>
+
+              <li>
+                <a href="./blog.html" class="navbar-link">Blog</a>
+              </li>
+
+              <li>
+                <a href="./shop.html" class="navbar-link">Products</a>
+              </li>
+
+              <li>
+                <a href="./contact.html" class="navbar-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-action">
+            <button
+              class="header-action-btn"
+              aria-label="Open whishlist"
+              data-panel-btn="whishlist"
+            >
+              <ion-icon name="heart-outline"></ion-icon>
+
+              <data class="btn-badge" value="3">03</data>
+            </button>
+
+            <button
+              class="header-action-btn"
+              aria-label="Open shopping cart"
+              data-panel-btn="cart"
+            >
+              <ion-icon name="basket-outline"></ion-icon>
+
+              <data class="btn-badge" value="2">02</data>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+    - #ASIDE
+  -->
+
+    <aside class="aside">
+      <div class="side-panel" data-side-panel="whishlist">
+        <button
+          class="panel-close-btn"
+          aria-label="Close whishlist"
+          data-panel-btn="whishlist"
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="panel-list">
+          <li class="panel-item">
+            <a href="./product-details.html" class="panel-card">
+              <figure class="item-banner">
+                <img
+                  src="./assets/images/product-small-1.jpg"
+                  width="46"
+                  height="46"
+                  loading="lazy"
+                  alt="Bright Side Vegetarian"
+                />
+              </figure>
+
+              <div>
+                <p class="item-title">Bright Side Vegetarian</p>
+
+                <span class="item-value">$20.15x1</span>
+              </div>
+
+              <button class="item-close-btn" aria-label="Remove item">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </a>
+          </li>
+
+          <li class="panel-item">
+            <a href="./product-details.html" class="panel-card">
+              <figure class="item-banner">
+                <img
+                  src="./assets/images/product-small-2.jpg"
+                  width="46"
+                  height="46"
+                  loading="lazy"
+                  alt="Eco Vegetable"
+                />
+              </figure>
+
+              <div>
+                <p class="item-title">Eco Vegetable</p>
+
+                <span class="item-value">$13.25x2</span>
+              </div>
+
+              <button class="item-close-btn" aria-label="Remove item">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </a>
+          </li>
+
+          <li class="panel-item">
+            <a href="./product-details.html" class="panel-card">
+              <figure class="item-banner">
+                <img
+                  src="./assets/images/product-small-3.jpg"
+                  width="46"
+                  height="46"
+                  loading="lazy"
+                  alt="House of Veggies"
+                />
+              </figure>
+
+              <div>
+                <p class="item-title">House of Veggies</p>
+
+                <span class="item-value">$20.15x1</span>
+              </div>
+
+              <button class="item-close-btn" aria-label="Remove item">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="subtotal">
+          <p class="subtotal-text">Subtotal:</p>
+
+          <data class="subtotal-value" value="215.14">$215.14</data>
+        </div>
+
+        <a href="./whishlist.html" class="panel-btn">View Whishlist</a>
+      </div>
+
+      <div class="side-panel" data-side-panel="cart">
+        <button
+          class="panel-close-btn"
+          aria-label="Close cart"
+          data-panel-btn="cart"
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="panel-list">
+          <li class="panel-item">
+            <a href="./product-details.html" class="panel-card">
+              <figure class="item-banner">
+                <img
+                  src="./assets/images/product-small-1.jpg"
+                  width="46"
+                  height="46"
+                  loading="lazy"
+                  alt="Bright Side Vegetarian"
+                />
+              </figure>
+
+              <div>
+                <p class="item-title">Bright Side Vegetarian</p>
+
+                <span class="item-value">$20.15x1</span>
+              </div>
+
+              <button class="item-close-btn" aria-label="Remove item">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </a>
+          </li>
+
+          <li class="panel-item">
+            <a href="./product-details.html" class="panel-card">
+              <figure class="item-banner">
+                <img
+                  src="./assets/images/product-small-2.jpg"
+                  width="46"
+                  height="46"
+                  loading="lazy"
+                  alt="Eco Vegetable"
+                />
+              </figure>
+
+              <div>
+                <p class="item-title">Eco Vegetable</p>
+
+                <span class="item-value">$13.25x2</span>
+              </div>
+
+              <button class="item-close-btn" aria-label="Remove item">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="subtotal">
+          <p class="subtotal-text">Subtotal:</p>
+
+          <data class="subtotal-value" value="215.14">$215.14</data>
+        </div>
+
+        <a href="./cart.html" class="panel-btn">View Cart</a>
+      </div>
+    </aside>
+
+    <main>
+      <article>
+        <!-- 
+        - #BREADCUMB
+      -->
+
+        <div class="breadcumb-wrapper2">
+          <h2 class="page-title">Product Details</h2>
+
+          <ol class="breadcumb-list">
+            <li class="breadcumb-item">
+              <a href="./index.html" class="breadcumb-link">Home</a>
+            </li>
+
+            <li class="breadcumb-item">Product</li>
+          </ol>
+        </div>
+
+        <!-- 
+        - #PRODUCT DETAILS
+      -->
+
+        <section class="section product-details">
+          <div class="container">
+            <div class="wrapper">
+              <div class="product-details-img">
+                <figure class="product-display">
+                  <img
+                    src="./assets/images/paket-1.png"
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    alt="Non-starchy vegetables."
+                    class="w-100"
+                    data-product-display
+                  />
+                </figure>
+
+                <ul class="product-thumbnail-list has-scrollbar">
+                  <li class="product-thumbnail-item">
+                    <img
+                      src="./assets/images/paket-3.png"
+                      width="700"
+                      height="700"
+                      loading="lazy"
+                      alt="Non-starchy vegetables."
+                      class="w-100"
+                      data-product-thumbnail
+                    />
+                  </li>
+
+                  <li class="product-thumbnail-item">
+                    <img
+                      src="./assets/images/paket-2.png"
+                      width="700"
+                      height="700"
+                      loading="lazy"
+                      alt="Non-starchy vegetables."
+                      class="w-100"
+                      data-product-thumbnail
+                    />
+                  </li>
+
+                  <li class="product-thumbnail-item">
+                    <img
+                      src="./assets/images/paket-4.png"
+                      width="700"
+                      height="700"
+                      loading="lazy"
+                      alt="Non-starchy vegetables."
+                      class="w-100"
+                      data-product-thumbnail
+                    />
+                  </li>
+
+                  <li class="product-thumbnail-item">
+                    <img
+                      src="./assets/images/paket-5.png"
+                      width="700"
+                      height="700"
+                      loading="lazy"
+                      alt="Non-starchy vegetables."
+                      class="w-100"
+                      data-product-thumbnail
+                    />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="product-details-content">
+                <h3 class="product-title">Paket Daging Segar Berkualitas.</h3>
+
+                <data class="product-price" value="350.00">Rp 350.000</data>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="product-text">
+                  Paket Daging Segar kami menawarkan berbagai pilihan daging
+                  berkualitas, mulai dari daging sapi yang lembut hingga ayam
+                  segar. Dikemas dengan cermat, paket ini menyediakan kebutuhan
+                  protein harian Anda dengan harga yang terjangkau, tanpa
+                  mengorbankan kualitas.
+                </p>
+
+                <div class="product-weight-wrapper">
+                  <p class="product-weight-title">Weight :</p>
+
+                  <ul class="product-weight-list">
+                    <li class="product-weight-item">
+                      <input
+                        type="radio"
+                        name="weight"
+                        id="weight-1"
+                        class="product-weight-radio"
+                      />
+
+                      <label for="weight-1" class="product-weight-label"
+                        >4L</label
+                      >
+                    </li>
+
+                    <li class="product-weight-item">
+                      <input
+                        type="radio"
+                        name="weight"
+                        id="weight-2"
+                        class="product-weight-radio"
+                      />
+
+                      <label for="weight-2" class="product-weight-label"
+                        >2L</label
+                      >
+                    </li>
+
+                    <li class="product-weight-item">
+                      <input
+                        type="radio"
+                        name="weight"
+                        id="weight-3"
+                        class="product-weight-radio"
+                      />
+
+                      <label for="weight-3" class="product-weight-label"
+                        >500ML</label
+                      >
+                    </li>
+
+                    <li class="product-weight-item">
+                      <input
+                        type="radio"
+                        name="weight"
+                        id="weight-4"
+                        class="product-weight-radio"
+                      />
+
+                      <label for="weight-4" class="product-weight-label"
+                        >200ML</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="product-qty">
+                  <a
+                    href="https://wa.me/628994591868?text=saya ingin membeli paket daging berkualitas dan segar"
+                    class="btn btn-primary product-qty-btn"
+                  >
+                    Hubungi kami
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="description-title">Descripton :</h4>
+
+            <p class="description-text">
+              kami mempersembahkan Paket Daging Segar dan Komplit, solusi hemat
+              dan berkualitas untuk kebutuhan makanan protein harian Anda! Kami
+              memahami betapa pentingnya memiliki akses mudah dan terjangkau
+              terhadap daging berkualitas, itulah mengapa kami telah merancang
+              paket ini dengan cermat untuk memenuhi kebutuhan makanan
+              sehari-hari Anda tanpa merusak anggaran. Setiap paket kami diisi
+              dengan berbagai potongan daging yang dipilih secara teliti dari
+              sumber terpercaya. Dari daging sapi yang lembut hingga ayam yang
+              segar, setiap potongan dipilih dengan standar kualitas tertinggi
+              untuk memastikan kesegaran dan kenikmatannya. Tak hanya itu, paket
+              ini juga mencakup variasi daging seperti daging sapi, daging ayam,
+              dan daging babi, sehingga Anda memiliki pilihan berlimpah untuk
+              menghidangkan hidangan favorit Anda.
+            </p>
+
+            <h4 class="description-title">Additional Information :</h4>
+
+            <table class="description-table" border="1px">
+              <tr class="table-row">
+                <th class="table-heading" scope="row">Ratings</th>
+
+                <td class="table-data">
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-heading" scope="row">Jenis paket</th>
+
+                <td class="table-data">Dagin segar dan berkualitas</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-heading" scope="row">Weight</th>
+
+                <td class="table-data">2 kg</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-heading" scope="row">Seller</th>
+
+                <td class="table-data">Organica</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="./index.html" class="logo"
+              >Organ<span class="span">ica</span></a
+            >
+
+            <p class="footer-text">
+              Terhubunglah dengan kami untuk mendapatkan penawaran eksklusif,
+              informasi terbaru, dan tips berguna seputar buah, daging, dan
+              sayuran segar. Bergabunglah dengan newsletter kami sekarang untuk
+              tetap terinformasi!
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#home" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#service" class="footer-link">Service</a>
+            </li>
+
+            <li>
+              <a href="#package" class="footer-link">Package</a>
+            </li>
+
+            <li>
+              <a href="#product" class="footer-link">Products</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer-link">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact</p>
+            </li>
+
+            <li class="footer-item">
+              <div class="contact-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <a href="https://wa.me/628994591868" class="contact-link"
+                >+62899 4591 868</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Berita</p>
+
+            <p class="newsletter-text">
+              Anda akan diberitahu ketika sesuatu yang baru akan muncul.
+            </p>
+
+            <form action="" class="footer-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address *"
+                required
+                class="footer-input"
+              />
+
+              <button type="submit" class="footer-form-btn" aria-label="Submit">
+                <ion-icon name="mail-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link">organica</a>. All
+            Rights Reserved.
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a class="footer-bottom-link">Term and Service</a>
+            </li>
+
+            <li>
+              <a class="footer-bottom-link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-to-top"
+      aria-label="Back to Top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
